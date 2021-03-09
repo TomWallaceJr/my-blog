@@ -1,8 +1,9 @@
 @import url('https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css');
 @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 .cursive {
-  font-family: "Amatic SC", cursive;
+  font-family: 'Rock Salt', cursive;
   font-weight: 700;
 }
 
@@ -13,5 +14,5 @@
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 80px;
 }
