@@ -24,6 +24,7 @@ export default function Post() {
         .then((data) => setPost(data))
         .catch(console.error)
     })
+    // maps over postData and displays a posts an article for each item
     return (
         <main className="bg-green-100 min-h-screen p-12">
             <section className="container mx-auto">
@@ -36,8 +37,8 @@ export default function Post() {
                         <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400" 
                         key={index}>
                             <img 
-                            src={postData.mainImage.asset.url}
-                            alt={postData.mainImage.alt}
+                            src={post.mainImage.asset.url}
+                            alt={post.mainImage.alt}
                             className="w-full h-full rounded object-cover absolute"
                             />
                             <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
