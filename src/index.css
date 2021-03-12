@@ -8,27 +8,32 @@
   box-sizing: border-box;
 }
 
-/* Custom Font Properties */
+/* Custom Font Properties 
+   takes a bit to set up but once set up makes styling much quicker */
 
 :root {
-  --ff-primary: 'DotGothic16', sans-serif;
+  --ff-primary: 'Apercu', sans-serif;
+  --ff-secondary: monospace;
 
   --fw-red: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #86bbf7;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1 rem;
+
+  --bs: 0.25em 0.25em 0.75em rgb(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgb(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5;
+    --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
@@ -51,6 +56,9 @@ img {
   max-width: 100%;
 }
 
+section {
+  padding: 4em 2em;
+}
 /* Typography */
 
 h1,
@@ -69,3 +77,122 @@ h2 {
 h3 {
   font-size: var(--fs-h3);
 }
+
+/* Header and Intro Typography */
+
+.intro-title {
+  font-weight: var(--fw-reg);
+}
+
+.intro-title strong {
+  display: block;
+}
+
+.intro-subtitle,
+.core-value-subtitles {
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  margin-bottom: 1em;
+  padding: 1em;
+  display: inline-block;
+}
+
+/* About Me Section Typography */
+
+.about-section {
+}
+
+.about-title {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+/* Core Values Section Typography */
+
+.core-values-section {
+}
+
+.core-values-title {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.value {
+}
+
+/* Intro Section */
+
+.intro {
+  position: relative;
+}
+
+.intro-img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: auto;
+    grid-column-gap: 1em;
+    grid-template-areas: 'img title' 'img subtitle';
+    grid-template-columns: min-content max-content;
+  }
+}
+
+.intro-img {
+  grid-area: img;
+  min-width: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-subtitle {
+  align-self: start;
+  grid-column: -1 / 1;
+  grid-row: 2;
+  text-align: right;
+  position: relative;
+  left: -1.5em;
+  width: calc(100% + 1.5em);
+  display: inline-block;
+}
+
+/* About Section */
+
+.about-section {
+  background: rgb(172, 171, 171);
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+}
+
+.about-section-paragraph {
+}
+
+/* Technical Skills Section */
+
+.technical-skills-section {
+}
+
+.technical-skills-section h2 {
+  text-align: center;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+}
+
+.technical-skills-section div {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .technical-skills-section ul {
+    display: inline-block;
+  }
+}
+/* Core Values section */
