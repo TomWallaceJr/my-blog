@@ -42,7 +42,7 @@ export default function Home() {
                 <li>Sanity.io</li>
                 <li>C#</li>
                 <li>JAVA</li>
-                <li>Jest, Mocha, Chai</li>
+                <li>Jest</li>
                 <li>Vercel</li>
                 <li>Heroku</li>
             </ul>
@@ -50,6 +50,7 @@ export default function Home() {
         </section>
         <section className='core-values-section'>
             <h2 className='core-values-title'>My Core Values</h2>
+            <article>
             <div className='value'>
                 <h3 className='core-value-subtitles'>Value 1</h3>
                 <p>Short Paragraph talking about this value. These values will be unique to
@@ -74,6 +75,7 @@ export default function Home() {
                     me and should reflect how I live my life.
                 </p>
             </div>
+            </article>
         </section>
         </main>
     )

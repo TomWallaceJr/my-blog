@@ -23,7 +23,7 @@
   --clr-accent: #86bbf7;
 
   --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h2: 2.1rem;
   --fs-h3: 1.25rem;
   --fs-body: 1 rem;
 
@@ -170,9 +170,14 @@ h3 {
   text-align: center;
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
+  margin-bottom: 0.6em;
+  color: var(--clr-accent);
+  -webkit-text-stroke: 1px black;
 }
 
-.about-section-paragraph {
+.about-section p {
+  padding: 0.5em;
+  text-indent: 1.8em;
 }
 
 /* Technical Skills Section */
@@ -184,6 +189,9 @@ h3 {
   text-align: center;
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
+  margin-bottom: 0.6em;
+  color: var(--clr-accent);
+  -webkit-text-stroke: 1px black;
 }
 
 .technical-skills-section div {
@@ -193,6 +201,39 @@ h3 {
 @media (min-width: 500px) {
   .technical-skills-section ul {
     display: inline-block;
+    padding: 0.5em;
   }
 }
 /* Core Values section */
+
+.core-values-section {
+  background: rgb(172, 171, 171);
+}
+
+.core-values-section h2 {
+  text-align: center;
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.6em;
+  color: var(--clr-accent);
+  -webkit-text-stroke: 1px black;
+}
+
+.value {
+  text-align: center;
+  border: solid 1px black;
+  margin: 1em;
+  content: '';
+  display: block;
+}
+
+@media (min-width: 500px) {
+  article {
+  }
+
+  .value {
+  }
+
+  .core-value-subtitles {
+  }
+}
