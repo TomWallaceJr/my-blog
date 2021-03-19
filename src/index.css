@@ -6,19 +6,26 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
-/* Custom Font Properties 
+main,
+.header {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Custom CSS Properties for font styling
    takes a bit to set up but once set up makes styling much quicker */
 
 :root {
-  --ff-primary: 'Apercu', sans-serif;
-  --ff-secondary: monospace;
+  --ff-primary: 'Blippo', fantasy;
+  --ff-secondary: sans-serif;
 
   --fw-red: 300;
   --fw-bold: 900;
 
-  --clr-light: #fff;
+  --clr-light: #eee0cb;
   --clr-dark: #303030;
   --clr-accent: #86bbf7;
 
@@ -33,7 +40,7 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5rem;
+    --fs-h1: 4.3rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
@@ -43,10 +50,10 @@
 /* General Styles */
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: white;
   margin: 0;
-  font-family: var(-ff-primary);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-body);
   line-height: 1.6;
 }
@@ -84,11 +91,21 @@ h3 {
   font-weight: var(--fw-reg);
 }
 
-.intro-title strong {
+.intro-title {
   display: block;
+  font-family: var(--ff-primary);
 }
 
-.intro-subtitle,
+.intro-subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+  background: var(--clr-accent);
+  margin-bottom: 1em;
+  padding: 1em;
+  display: inline-block;
+  font-family: var(--ff-primary);
+}
+
 .core-value-subtitles {
   margin: 0;
   font-size: var(--fs-h3);
@@ -106,19 +123,48 @@ h3 {
 .about-title {
   margin: 0;
   font-size: var(--fs-h3);
+  font-family: var(--ff-primary);
 }
 
 /* Core Values Section Typography */
 
-.core-values-section {
-}
-
 .core-values-title {
   margin: 0;
   font-size: var(--fs-h3);
+  font-family: var(--ff-primary);
 }
 
-.value {
+/* NAV BAR ***/
+
+.navbar-nav {
+  list-style: none;
+  background-color: #444;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.nav-link {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  text-align: center;
+}
+
+.nav-link-active {
+  background: var(--clr-accent);
+}
+
+.nav-link:hover {
+  background: var(--clr-accent);
+}
+
+.nav-link {
+  display: block;
+  text-align: auto;
 }
 
 /* Intro Section */
@@ -140,6 +186,17 @@ h3 {
     grid-template-areas: 'img title' 'img subtitle';
     grid-template-columns: min-content max-content;
   }
+
+  .intro-subtitle {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+    display: inline-block;
+  }
 }
 
 .intro-img {
@@ -149,22 +206,7 @@ h3 {
   z-index: 2;
 }
 
-.intro-subtitle {
-  align-self: start;
-  grid-column: -1 / 1;
-  grid-row: 2;
-  text-align: right;
-  position: relative;
-  left: -1.5em;
-  width: calc(100% + 1.5em);
-  display: inline-block;
-}
-
 /* About Section */
-
-.about-section {
-  background: rgb(172, 171, 171);
-}
 
 .about-section h2 {
   text-align: center;
@@ -172,7 +214,6 @@ h3 {
   font-weight: var(--fw-bold);
   margin-bottom: 0.6em;
   color: var(--clr-accent);
-  -webkit-text-stroke: 1px black;
 }
 
 .about-section p {
@@ -191,7 +232,7 @@ h3 {
   font-weight: var(--fw-bold);
   margin-bottom: 0.6em;
   color: var(--clr-accent);
-  -webkit-text-stroke: 1px black;
+  font-family: var(--ff-primary);
 }
 
 .technical-skills-section div {
@@ -206,34 +247,48 @@ h3 {
 }
 /* Core Values section */
 
-.core-values-section {
-  background: rgb(172, 171, 171);
-}
-
 .core-values-section h2 {
   text-align: center;
   font-size: var(--fs-h2);
   font-weight: var(--fw-bold);
   margin-bottom: 0.6em;
   color: var(--clr-accent);
-  -webkit-text-stroke: 1px black;
+  width: 100%;
+}
+
+.core-value-subtitles {
+  width: 100%;
+  font-family: var(--ff-primary);
 }
 
 .value {
+  height: 300px;
+  width: 300px;
   text-align: center;
   border: solid 1px black;
-  margin: 1em;
-  content: '';
+  margin: auto;
+  margin-bottom: 20px;
   display: block;
+  box-shadow: 3px 3px 3px 3px var(--clr-accent);
 }
 
-@media (min-width: 500px) {
-  article {
+.value p {
+  padding: 2px;
+}
+@media (min-width: 600px) {
+  .core-values-section article {
+    display: grid;
+    grid-template-areas:
+      'topleft-value topright-value'
+      'bottomleft-value bottomright-value';
+    gap: 20px;
+    max-width: 700px;
+    margin: auto;
   }
 
   .value {
   }
 
-  .core-value-subtitles {
+  .core-value-section {
   }
 }

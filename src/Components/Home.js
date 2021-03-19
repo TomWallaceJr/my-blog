@@ -52,27 +52,27 @@ export default function Home() {
             <h2 className='core-values-title'>My Core Values</h2>
             <article>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Value 1</h3>
-                <p>Short Paragraph talking about this value. These values will be unique to
-                    me and should reflect how I live my life.
+                <h3 className='core-value-subtitles'>Kindness</h3>
+                <p>In a world where social media is giving us a convenience no generation before us
+                    ever had, many use it to spew hatred and be downright vicious to one another.
+                    I am undersanding, empathetic, and kind to everyone. 
                 </p>
             </div>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Value 2</h3>
-                <p>Short Paragraph talking about this value. These values will be unique to
-                    me and should reflect how I live my life.
+                <h3 className='core-value-subtitles'>Service</h3>
+                <p>I've been in the service industry since I was 14 years old working at a local restaraunt as a busboy, 
+                    and I also love helping people. 
                 </p>
             </div>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Value 3</h3>
-                <p>Short Paragraph talking about this value. These values will be unique to
-                    me and should reflect how I live my life.
+                <h3 className='core-value-subtitles'>Determiniation</h3>
+                <p>I've got an all-in attitude. When I make a decision and set my mind to do something I do it. <strong>PERIOD.</strong>
                 </p>
             </div>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Value 4</h3>
-                <p>Short Paragraph talking about this value. These values will be unique to
-                    me and should reflect how I live my life.
+                <h3 className='core-value-subtitles'>Learning</h3>
+                <p>I love learning new skills and technologies. I am always looking to learn a new skill or hone the 
+                    ones I currently via YouTube, Scrimba, a coding bootcamp, etc. I am always sharpening my axe.
                 </p>
             </div>
             </article>
