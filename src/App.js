@@ -6,6 +6,7 @@ import Post from './Components/Post';
 import Project from './Components/Project';
 import NavBar from './Components/NavBar';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route component={Post} path='/post' />
         <Route component={Project} path='/portfolio' />
       </Switch>
+      <Footer />
     </BrowserRouter>
   )
 }

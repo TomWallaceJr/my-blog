@@ -2,6 +2,7 @@ import React from 'react';
 import wsopme from '../images/wsopme.jpg';
 import NavBar from './NavBar';
 
+
 export default function Header() {
     return (
         <header className='header'>

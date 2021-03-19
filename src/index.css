@@ -50,7 +50,7 @@ main,
 /* General Styles */
 
 body {
-  background: var(--clr-dark);
+  background: url('images/earth.jpg') no-repeat center center fixed;
   color: white;
   margin: 0;
   font-family: var(--ff-secondary);
@@ -221,6 +221,11 @@ h3 {
   text-indent: 1.8em;
 }
 
+.about-section,
+.core-values-section {
+  background-color: rgb(129, 126, 126, 0.7);
+}
+
 /* Technical Skills Section */
 
 .technical-skills-section {
@@ -275,6 +280,7 @@ h3 {
 .value p {
   padding: 2px;
 }
+
 @media (min-width: 600px) {
   .core-values-section article {
     display: grid;
@@ -285,10 +291,10 @@ h3 {
     max-width: 700px;
     margin: auto;
   }
+}
 
-  .value {
-  }
-
-  .core-value-section {
-  }
+.footer {
+  height: 60px;
+  text-align: center;
+  margin-top: 20px;
 }

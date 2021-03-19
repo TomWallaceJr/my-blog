@@ -22,9 +22,9 @@ export default function Project() {
         <main className="">
             <section className="container mx-auto">
                 <h1 className="portfolio-title mb-5 text-center text-blue-300">My Portfolio!</h1>
-                <section className="grid grid-cols-1 gap-8">
+                <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projectData && projectData.map((project, index) => (
-                    <article className="max-h-500 max-w-300 bg-white text-black-700 justify-center">
+                    <article className="max-h-500 max-w-300 bg-gray-300 bg-opacity-70 text-black-700 justify-center">
                         <h3 className="text-black text-3xl font-bold mb-2 hover:text-red-700">{
                             <a 
                             href={project.link}
@@ -35,9 +35,12 @@ export default function Project() {
                         }</h3>
                         <div className="text-gray-500 text-xs space-x-4">
                             <span>
-                                <strong className="font-bold">Company</strong>:{" "}
+                                <strong className="font-bold">Purpose</strong>:{" "}
                                 {project.place}
                             </span>
+                            <img 
+                            src={project.mainImage}
+                            alt='project image'/>
                             <p className="my-6 text-lg text-black leading-relaxed">
                                 {project.description}
                             </p>
