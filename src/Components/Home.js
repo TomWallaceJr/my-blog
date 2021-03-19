@@ -70,9 +70,9 @@ export default function Home() {
                 </p>
             </div>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Learning</h3>
-                <p>I love learning new skills and technologies. I am always looking to learn a new skill or hone the 
-                    ones I currently via YouTube, Scrimba, a coding bootcamp, etc. I am always sharpening my axe.
+                <h3 className='core-value-subtitles'>Growth</h3>
+                <p>I love learning new skills and technologies and am constantly trying to better myself.
+                    I am always looking to learn something new or hone my current abilities. I am always sharpening my axe.
                 </p>
             </div>
             </article>

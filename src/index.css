@@ -19,8 +19,8 @@ main,
    takes a bit to set up but once set up makes styling much quicker */
 
 :root {
-  --ff-primary: 'Blippo', fantasy;
-  --ff-secondary: sans-serif;
+  --ff-primary: 'Amatic SC', fantasy;
+  --ff-secondary: 'Josefin' sans-serif;
 
   --fw-red: 300;
   --fw-bold: 900;
@@ -269,7 +269,7 @@ h3 {
   margin: auto;
   margin-bottom: 20px;
   display: block;
-  box-shadow: 3px 3px 3px 3px var(--clr-accent);
+  box-shadow: 3px 3px 3px 3px white;
 }
 
 .value p {
