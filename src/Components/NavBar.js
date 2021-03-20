@@ -1,7 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
-import mypic from '../images/earth.jpg';
 
 export default function NavBar() {
     return (
@@ -16,23 +14,22 @@ export default function NavBar() {
                         to='/'
                         exact
                         className="nav-link"
-                        activeClassName="nav-link-active">
+                        activeClassName="active-nav">
                         Home
                     </NavLink>
                     <NavLink
                         to='/post'
                         className="nav-link"
-                        activeClassName="nav-link-active">
+                        activeClassName="active-nav">
                         Blog
                     </NavLink>
                     <NavLink
                         to='/portfolio'
                         className="nav-link"
-                        activeClassName="nav-link-active">
+                        activeClassName="active-nav">
                         Portfolio
                     </NavLink>
                 </nav>
                 </>
-           
     )
 }

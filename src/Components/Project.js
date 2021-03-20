@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 //import project from '../../myblog/schemas/project.js';
-import sanityClient from '../client.js'
+import sanityClient from '../client.js';
 
 export default function Project() {
     const [projectData, setProjectData] = useState(null);
@@ -23,7 +23,7 @@ export default function Project() {
         <main className="">
             <section className="container mx-auto">
                 <h1 className="portfolio-title mb-5 text-center text-blue-300">My Portfolio!</h1>
-                <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <section className="grid md:grid-cols-2 gap-8">
                     {projectData && projectData.map((project, index) => (
                     <article className="max-h-500 max-w-300 bg-gray-300 bg-opacity-70 text-black-700 justify-center">
                         <h3 className="text-black text-3xl font-bold mb-2 hover:text-red-700">{

@@ -11,7 +11,7 @@ export default function Home() {
                 
                 <p>Ten years experience in the casino industry gifted me with exceptional 
                 customer service, communication, and interpersonal skills. I recently obtained my Certificate of
-                Completion from Thinkfuls' Remote Engineering Immersion Program and am now seeking a remote position 
+                Completion from Thinkfuls's Remote Engineering Immersion Program and am now seeking a remote position 
                 with a strong, collaborative, and supportive team where I can gain some mentorship, learn new skills, and 
                 improve my current ones. </p>
 
@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
             </div>
             <div className='value'>
-                <h3 className='core-value-subtitles'>Determiniation</h3>
+                <h3 className='core-value-subtitles'>Determination</h3>
                 <p>I've got an all-in attitude. When I make a decision and set my mind to do something I do it. <strong>PERIOD.</strong>
                 </p>
             </div>
