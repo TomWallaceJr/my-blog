@@ -11,11 +11,7 @@ export default function Project() {
             date,
             place,
             description,
-            mainImage{
-                asset->{
-                    _id,
-                    url
-                },
+            mainImage,
             projectType,
             link,
             tags

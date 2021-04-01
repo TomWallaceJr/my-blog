@@ -9,7 +9,7 @@ export default function NavBar() {
                     <SocialIcon url="https://twitter.com/TomWallaceJr2" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                     <SocialIcon url="https://github.com/TomWallaceJr" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35 }} />
                 </div> */}
-                <nav classname="navbar-nav">
+                <nav className="navbar-nav">
                 <NavLink
                         to='/'
                         exact
